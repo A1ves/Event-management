@@ -1,0 +1,50 @@
+POST http://localhost:1202/api/auth/signup
+Content-Type: application/json
+
+{
+    "username": "Ayron",
+    "password": "1234"
+}
+
+###
+
+POST http://localhost:1202/api/auth/login
+Content-Type: application/json
+
+{
+    "username": "Ayron",
+    "password": "1234"
+}
+
+###
+
+POST http://localhost:1202/api/events
+Content-Type: application/json
+
+{
+    "title": "Festa Calouros",
+    "description": "Festa de calouros da universidade, nos dias 15 a 18 de novembro",
+    "quantities": "100",
+    "value": "150,00"
+}
+
+###
+
+POST http://localhost:1202/api/events
+Content-Type: application/json
+
+{
+    "title": "Festa Exposição",
+    "description": "Festa de exposição 10 a 12 de julho",
+    "quantities": "30",
+    "value": "00,00"
+}
+
+###
+
+GET http://localhost:1202/api/events
+
+###
+
+GET http://localhost:1202/api/events/1a25cafe-ad08-4240-a280-4815fee8a0fc
+
